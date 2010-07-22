@@ -1,0 +1,127 @@
+     
+----------------------------------------
+     HOWTO? DOCUMENTATION
+----------------------------------------
+
+
+     First of all, I want to thank you for using this class in your web application. It's still beta so if you find some errors and can not fix yourself (if you fix yourself please write it here to the discussion forum), you can write to this class' forum so everybody can help you here. 
+
+The main class:
+---------------
+
+This class can be called like this;
+
+$var = new simplexml;
+
+The main settings are:
+
+$var->skip_empty_values 
+-----------------------
+[default boolean false];
+
+You can tell the class to skip the empty variables to be added to the result by setting this value to boolean true.
+
+
+$var->ignore_level     
+-----------------------
+[default int 0]
+
+This is used to skip the first opening tag like simplexml_load_file() does. Imagine a XML file like this;
+<data><a><child>value2</child></a><data>
+
+in simplexml_load_file the result is;
+
+SimpleXMLElement Object
+(
+    [a] => SimpleXMLElement Object
+        (
+            [child] => value2
+        )
+
+)
+
+
+in our class, the result is:
+
+stdClass Object
+(
+    [a] => stdClass Object
+        (
+            [child] => value2
+        )
+
+)
+
+if you set $var->ignore_level to -1 the result will be:
+
+stdClass Object
+(
+    [data] => stdClass Object
+        (
+            [a] => stdClass Object
+                (
+                    [child] => value2
+                )
+
+        )
+
+)
+
+or if you set $var->ignore_level to 1 the result will be:
+
+stdClass Object
+(
+    [child] => value2
+)
+
+
+
+
+     Once when you called the class, you can parse your XML file with this command,
+
+$var->xml_load_file(string $location, string $resulttype="object", string $charset);
+
+$location :
+-----------
+
+     The location of the XML file you wish to parse.You can use both local or remote files with this class to parse XML content.
+
+
+$resulttype:    
+------------
+"object"|"array"
+
+     With this variable, you tell the class if you want to access the result element with object style variables or array style variables. The result will be then either object or array. The default value is "object" as this class' main concept is to act like simplexml_load_file.
+
+
+$charset :
+-------------
+
+     This variable sets the xml_parser_create() function's charset variable. For more information of the usage of this variable, please search xml_parser_create in php.net .
+
+IMPORTANT NOTE : 
+-----------------
+
+PHP4 doesnt support inner object functions. This is what i mean : 
+
+When you try :
+
+$value = $item->key1->attributes()->name;
+
+it won't work. So use this:
+
+$var = $item->key1->attributes();
+$value = $var->name;
+
+this will work.
+
+And if you try to access nodes like "media:type" in object mode, it will give an error. I'll modify it later to change these tags to "media_type". That will be in next release. 
+
+Thank you for using my class.
+
+If you want more documentation or need some help about this class, you can post your question to this class' discussion forum. 
+
+
+
+
+

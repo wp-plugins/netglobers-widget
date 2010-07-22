@@ -1,0 +1,133 @@
+#contentMap {margin:0px 15px 0px 15px;z-index:80;vertical-align:middle;}
+#netglobersBox {
+	background-color:black; 
+	border:5px solid black;
+}
+#netglobersBox p {
+	font-family: Century Gothic,georgia,Serif; 
+	list-style-type:none;
+	text-transform:none;
+	line-height:20px;
+	letter-spacing: 0px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+	font-stretch: normal;
+	font-size-adjust: none;
+	font-size: 13px;
+	color:white;
+}
+#netglobersBox h2 {text-align: center;}
+#netglobersHeader {height:25px; margin:0px !important; padding:0px !important; background-color:#0F0F0F;}
+#netglobersHeader #pHeader {float:left; padding:2px 5px 0px 5px !important; margin:0px !important;}
+#netglobersFooter {height:25px; margin:0px; padding:0px; background-color:#0F0F0F;}
+#netglobersFooter a {width:16px; height:16px; margin:5px 0px 5px 5px}
+#netglobersFooter #liFacebook {float:left; background: url('images/facebook.ico') no-repeat !important;}
+#netglobersFooter #liTwitter {float:left; background: url('images/twitter.gif') no-repeat !important;}
+#netglobersFooter #liMore {float:left; background: url('images/more.gif') no-repeat !important;}
+#netglobersFooter p {padding:1px 5px 0px 5px !important;}
+#netglobersFooter #liNetglobers {float:right; padding:1px 5px 0px 5px !important; color:white; margin:0px !important; width:86px; height:24px;}
+#netglobersFooter #txtMore {float:left;cursor:pointer; margin:2px 0 !important;}
+#netglobersFooter img {margin:0px !important; padding:0px !important; border:medium none !important;}
+
+#tooltip {
+    display:none;
+    background:transparent url('images/black_arrow.gif') no-repeat;
+    font-size:15px;
+    height:145px;
+    width:210px;
+    padding:15px 25px 25px 25px;
+	margin:0px;
+    color:#fff;
+    z-index:100;
+    position:absolute;
+}
+
+#tooltip p {
+	padding:5px 0px 0px 10px !important;
+	margin:0px !important;
+	font-size:15px !important;
+}
+
+#tooltip img {
+	margin: 0px 5px 0px 0px !important;
+}
+
+#tooltip .tooltipLink{
+	color:white;
+	text-decoration:none;
+}
+
+#tooltip .tooltipLink:hover{
+	text-decoration:underline;
+}
+
+#iconValidUserMail {
+	margin-top: 4px;
+	margin-left: 5px;
+	position:absolute;
+	width: 16px;
+	height: 16px;
+	background-repeat:no-repeat;
+}
+
+#validUserMail{
+	margin-top: 3px;
+	margin-left: 25px;
+	position:absolute;
+}
+
+
+div#formNetglobersAdmin {margin-top:15px;}
+
+/* Style de Magento pour les messages d'erreurs, de succes et de notice */
+
+.success {
+color:#3D6611;
+}
+.error {
+color:#DF280A;
+}
+.notice {
+color:#E26703;
+}
+.success, .error {
+font-weight:bold;
+}
+.messages {
+overflow:hidden;
+width:100%;
+}
+.error-msg, .success-msg, .notice-msg, .note-msg {
+background-position:10px 13px !important;
+background-repeat:no-repeat !important;
+border-style:solid !important;
+border-width:1px !important;
+font-size:0.95em !important;
+font-weight:bold !important;
+margin-bottom:1em !important;
+min-height:23px !important;
+padding:8px 8px 8px 32px !important;
+}
+.error-msg li, .success-msg li, .notice-msg li {
+margin-bottom:0.2em;
+margin-top:5px;
+}
+.error-msg {
+background-color:#FAEBE7;
+background-image:url('images/error.gif');
+border-color:#F16048;
+color:#DF280A;
+}
+.success-msg {
+background-color:#EFF5EA;
+background-image:url('images/success.gif');
+border-color:#446423;
+color:#3D6611;
+}
+.notice-msg, .note-msg {
+background-color:#FAFAEC;
+background-image:url('images/note.gif');
+border-color:#FCD344;
+color:#3D6611;
+}
