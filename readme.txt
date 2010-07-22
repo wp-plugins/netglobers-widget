@@ -28,13 +28,7 @@ You need to create an account on www.netglobers.com so as to be able to use this
 3. In 'Widgets' category, under 'Appearance' menu in WordPress Administration, drag 'Widget NetGlobers' on the Sidebar
 4. Click on 'NetGlobers' menu in WordPress Administration for entering in Widget configuration. Enter an email address associated to a NetGlobers account and save.
 
-== Frequently Asked Questions ==
-
-== Screenshots ==
-
 == Changelog ==
 
 = 1.0 =
 * First Live Version
-
-== Upgrade Notice ==
