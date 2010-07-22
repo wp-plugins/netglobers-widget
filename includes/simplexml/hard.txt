@@ -1,0 +1,325 @@
+XML File:
+
+<?xml version="1.0"?>
+<?xml-stylesheet href="catalog.xsl" type="text/xsl"?>
+<!DOCTYPE catalog SYSTEM "catalog.dtd">
+<catalog>
+   <product description="Cardigan Sweater" product_image="cardigan.jpg">
+      <catalog_item gender="Men's">
+         <item_number>QWZ5671</item_number>
+         <price>39.95</price>
+         <size description="Medium">
+            <color_swatch image="red_cardigan.jpg">Red</color_swatch>
+            <color_swatch image="burgundy_cardigan.jpg">Burgundy</color_swatch>
+         </size>
+         <size description="Large">
+            <color_swatch image="red_cardigan.jpg">Red</color_swatch>
+            <color_swatch image="burgundy_cardigan.jpg">Burgundy</color_swatch>
+         </size>
+      </catalog_item>
+      <catalog_item gender="Women's">
+         <item_number>RRX9856</item_number>
+         <price>42.50</price>
+         <size description="Small">
+            <color_swatch image="red_cardigan.jpg">Red</color_swatch>
+            <color_swatch image="navy_cardigan.jpg">Navy</color_swatch>
+            <color_swatch image="burgundy_cardigan.jpg">Burgundy</color_swatch>
+         </size>
+         <size description="Medium">
+            <color_swatch image="red_cardigan.jpg">Red</color_swatch>
+            <color_swatch image="navy_cardigan.jpg">Navy</color_swatch>
+            <color_swatch image="burgundy_cardigan.jpg">Burgundy</color_swatch>
+            <color_swatch image="black_cardigan.jpg">Black</color_swatch>
+         </size>
+         <size description="Large">
+            <color_swatch image="navy_cardigan.jpg">Navy</color_swatch>
+            <color_swatch image="black_cardigan.jpg">Black</color_swatch>
+         </size>
+         <size description="Extra Large">
+            <color_swatch image="burgundy_cardigan.jpg">Burgundy</color_swatch>
+            <color_swatch image="black_cardigan.jpg">Black</color_swatch>
+         </size>
+      </catalog_item>
+   </product>
+</catalog>
+
+
+
+
+Class Output : 
+
+Array
+(
+    [product] => Array
+        (
+            [@attributes] => Array
+                (
+                    [description] => Cardigan Sweater
+                    [product_image] => cardigan.jpg
+                )
+
+            [catalog_item] => Array
+                (
+                    [0] => Array
+                        (
+                            [@attributes] => Array
+                                (
+                                    [gender] => Men's
+                                )
+
+                            [item_number] => QWZ5671
+                            [price] => 39.95
+                            [size] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [description] => Medium
+                                                )
+
+                                            [color_swatch] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [@content] => Red
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => red_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [@content] => Burgundy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => burgundy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [description] => Large
+                                                )
+
+                                            [color_swatch] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [@content] => Red
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => red_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [@content] => Burgundy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => burgundy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [@attributes] => Array
+                                (
+                                    [gender] => Women's
+                                )
+
+                            [item_number] => RRX9856
+                            [price] => 42.50
+                            [size] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [description] => Small
+                                                )
+
+                                            [color_swatch] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [@content] => Red
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => red_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [@content] => Navy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => navy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [@content] => Burgundy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => burgundy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [description] => Medium
+                                                )
+
+                                            [color_swatch] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [@content] => Red
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => red_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [@content] => Navy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => navy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [@content] => Burgundy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => burgundy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [3] => Array
+                                                        (
+                                                            [@content] => Black
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => black_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [description] => Large
+                                                )
+
+                                            [color_swatch] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [@content] => Navy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => navy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [@content] => Black
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => black_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [@attributes] => Array
+                                                (
+                                                    [description] => Extra Large
+                                                )
+
+                                            [color_swatch] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [@content] => Burgundy
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => burgundy_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [@content] => Black
+                                                            [@attributes] => Array
+                                                                (
+                                                                    [image] => black_cardigan.jpg
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
